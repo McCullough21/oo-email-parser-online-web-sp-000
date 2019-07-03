@@ -6,9 +6,11 @@ class EmailParser
 
 attr_accessor :emails
 
-def parse=(emails)
+def initialize(emails)
   emails = self.new
   @emails = emails
+
+def parse=(emails)
   @emails.split || @emails.split(", ")
   @emails.join(", ")
 end
