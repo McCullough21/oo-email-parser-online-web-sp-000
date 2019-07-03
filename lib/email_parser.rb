@@ -12,7 +12,7 @@ end
 
 def parse
   delimiters = [' ', ', ', ',']
-  @emails.split
+  @emails.split(Regexp.union(delimiters))
 end
 
 
