@@ -11,8 +11,8 @@ def initialize(emails)
 end
 
 def parse
-
-  @emails.split(/[(,( )), ]/)
+  delimiters = [' ', ', ', ',']
+  @emails.split
 end
 
 
