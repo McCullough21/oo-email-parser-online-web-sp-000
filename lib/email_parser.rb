@@ -9,6 +9,7 @@ attr_accessor :emails
 def initialize(emails)
   emails = self.new
   @emails = emails
+end
 
 def parse=(emails)
   @emails.split || @emails.split(", ")
