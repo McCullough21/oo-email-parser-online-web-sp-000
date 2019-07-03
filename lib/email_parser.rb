@@ -11,9 +11,7 @@ def initialize(emails)
 end
 
 def parse
-  @emails.split(/(, ), /)
-  # @emails.split(", ")
-  # @emails.join(", ")
+  @emails.split
 end
 
 
